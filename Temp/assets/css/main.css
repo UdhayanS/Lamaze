@@ -2837,7 +2837,7 @@ hr {
 .slider-area .hero__caption::after {
     position: absolute;
     content: "";
-    background-image: url(../img/hero/hero_arrow.png);
+    background-image: url(../img/hero/h1_hero.jpg);
     left: 0;
     right: 0;
     bottom: -26px;
