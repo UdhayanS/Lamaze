@@ -9,7 +9,6 @@ document.getElementById('emailForm').addEventListener('submit', function(event) 
     emailjs.sendForm('service_sfvli6h', 'template_ttemf9t', form)
         .then(function(response) {
             console.log('SUCCESS!', response.status, response.text);
-            alert('Email sent successfully!');
             form.reset(); // Reset the form after successful submission
         }, function(error) {
             console.log('FAILED...', error);
