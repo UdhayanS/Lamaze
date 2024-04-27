@@ -114,7 +114,7 @@
         <!-- ================ contact section start ================= -->
         <section class="contact-section">
             <div class="container">
-                <div class="d-none d-sm-block mb-5 pb-4">
+                <!-- <div class="d-none d-sm-block mb-5 pb-4"> -->
                     
                 <div class="row">
                     <div class="col-12">
@@ -141,10 +141,10 @@
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group">
-                                        <input class="form-control valid" name="mail" id="mail" type="email"
+                                        <input class="form-control valid" name="mail" id="mail" type="email" onkeyup="validate()"
                                             onfocus="this.placeholder = ''"
                                             onblur="this.placeholder = 'Enter email address'" placeholder="Email">
-                                    </div>
+                                            <label id="text2" style=" visibility:hidden" padding-bottom="0px" >invalid</label>                                    </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-group">
@@ -155,7 +155,7 @@
                                 </div>
                             </div>
                             <div class="form-group mt-3">
-                                <button type="submit" class="button button-contactForm boxed-btn" style="border-color: #ff9899;">Send</button>
+                                <button type="submit" class="button button-contactForm boxed-btn" style="border-color: #efb797;">Send</button>
                             </div>
                         </form>
                     </div>
@@ -164,29 +164,37 @@
 
                     <div class="col-lg-3 offset-lg-1">
                         <div class="media contact-info">
+                            <div class="contact">
                             <span class="contact-info__icon"><i class="fa fa-map-marker" style="font-size:30px; color:black" ></i></span>
                             <div class="media-body">
                                 <h3>New york,USA</h3>
-                                <p>Rosemead, CA 91770</p>
+                                <p>4th selector in new scheme road</p>
                             </div>
+                            </div>
+
                         </div>
                         <div class="media contact-info">
+                            <div class="contact">
                             <span class="contact-info__icon"><i class="fa fa-user-circle-o" style="font-size:25px; color:black"></i></span>
                             <div class="media-body">
                                 <h3>+1 253 565 2365</h3>
                                 <p>Mon to Fri 9am to 6pm</p>
                             </div>
                         </div>
+                            
+                        </div>
                         <div class="media contact-info">
+                            <div class="contact">
                             <span class="contact-info__icon"><i class="fa fa-envelope" style="font-size:25px; color:black"></i></span>
                             <div class="media-body">
-                                <h3>vabhoomish@gmail.com</h3>
+                                <h3>arthilamaze@gmail.com</h3>
                                 <p>Send us your query anytime!</p>
+                            </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            
         </section>
         <!-- ================ contact section end ================= -->
 
