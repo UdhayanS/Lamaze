@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900|Rufina:400,700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,454;1,454&display=swap");
+
 
 .white-bg {
     background: #ffffff
@@ -50,7 +52,7 @@
     color: #ff9899 !important;
     display: inline-block;
     padding: 18px 44px;
-    font-family: "Platypi", serif;
+    font-family: "Sofia Sans", sans-serif;
     font-size: 14px;
     font-weight: 400;
     border: 0;
@@ -133,7 +135,7 @@
 }
 
 body {
-    font-family: "Platypi", sans-serif;
+    font-family: "Sofia Sans", sans-serif;
     font-weight: normal;
     font-style: normal
 }
@@ -144,17 +146,18 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Platypi", serif;
+    font-family: "Sofia Sans", sans-serif;
     color: #000a2d;
     margin-top: 0px;
     font-style: normal;
     font-weight: 500;
-    text-transform: normal
+    text-transform: normal;
+    padding: 10px;
 }
 
 p {
-    font-family: "Platypi", sans-serif;
-    color: #10285d;
+    font-family: "Sofia Sans", sans-serif;
+    color: #51370b;
     font-size: 16px;
     line-height: 30px;
     margin-bottom: 15px;
@@ -402,7 +405,7 @@ hr {
     background: #ff9899;
     padding: 27px 44px;
     text-transform: capitalize;
-    font-family: "Rubik", sans-serif;
+    font-family: "Sofia Sans", sans-serif;
     color: #fff;
     cursor: pointer;
     display: inline-block;
@@ -2293,8 +2296,8 @@ hr {
 }
 
 .section-paddingt30 {
-    padding-top: 195px;
-    padding-bottom: 90px
+    padding-top: 50px;
+    padding-bottom: 20px
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -2326,7 +2329,7 @@ hr {
 }
 
 .section-padding3 {
-    padding-top: 150px;
+    padding-top: 50px;
     padding-bottom: 0
 }
 
@@ -2670,10 +2673,11 @@ hr {
 	content: '';
 	position: absolute;
 	left: 0;
+
 	top: 0;
 	height: 100%;
 	width: 100%;
-	background-color: rgb(16, 98, 102);
+	background-color: rgb(0, 0, 0);
 	opacity: 0.7;
 	z-index: -1;
 }
@@ -2703,12 +2707,16 @@ hr {
 }
 
 .slider-height2 {
-    background-image: url(../img/hero/hero2.jpg);
     min-height: 390px;
     background-repeat: no-repeat;
-    background-size: cover
-}
-
+    background-size: cover;
+    background: linear-gradient(
+      96.36deg,
+      rgba(251, 227, 220, 0.9)43.85%,
+      #efb797 72.38%
+      
+    );
+  }
 @media (max-width: 575px) {
     .slider-height2 {
         min-height: 260px
@@ -3302,7 +3310,7 @@ hr {
 }
 
 .categories-area {
-    background-image: url(../img/gallery/shape1.png);
+    background-color: #ffe5e5;
     background-size: 71%;
     background-repeat: no-repeat;
     background-position: left top
@@ -3340,7 +3348,14 @@ hr {
     -o-transition: all .4s ease-out 0s;
     transition: all .4s ease-out 0s;
     position: relative;
+    background: #ff9899;
     z-index: 1
+}
+
+.categories-area .single-cat:hover{
+    transition: 200ms ease-in-out;
+    transform: scale(1.03);
+    box-shadow: 10px 10px 20px #ff848452;
 }
 
 .categories-area .single-cat::before {
@@ -3349,7 +3364,7 @@ hr {
     width: 100%;
     height: 0;
     background: #ff9899;
-    transition: .6s;
+    /* transition: .6s; */
     bottom: 0;
     left: 0;
     z-index: -1;
@@ -6460,5 +6475,37 @@ ul{
 }
 
 
+
+
+
+
+
+
+
+
+
+.wt-footer-bot-left{
+    font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+    padding-top: 50px;
+    text-align: center;
+    
+}
+
+
+@media only screen and (max-width: 991px) {
+    .wt-footer-bot-left, .wt-footer-bot-right {
+        float: none;
+        text-align: center;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+}
 
 
