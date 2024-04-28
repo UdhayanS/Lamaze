@@ -149,7 +149,7 @@ h5,
 h6 {
     font-family: "Sofia Sans", sans-serif;
     color: #000a2d;
-    margin-top: 0px;
+    margin-top: -30px;
     font-style: normal;
     font-weight: 500;
     text-transform: normal;
@@ -811,7 +811,7 @@ hr {
 }
 
 .mb-70 {
-    margin-bottom: 70px
+    margin-bottom: 30px
 }
 
 .mb-75 {
@@ -2191,8 +2191,8 @@ hr {
 }
 
 .w-padding2 {
-    padding-top: 130px;
-    padding-bottom: 125px
+    padding-top: 50px;
+    padding-bottom: 50px
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -2409,9 +2409,9 @@ hr {
 }
 
 .section-tittle h2 {
-    font-size: 48px;
+    font-size: 45px;
     display: block;
-    color: #000a2d;
+    color: #e55153;
     font-weight: 600
 }
 
@@ -2669,6 +2669,7 @@ hr {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover
+    
 }
 
 .slider-height::after {
@@ -2726,14 +2727,18 @@ hr {
 }
 
 .slider-area .hero__caption h1 {
-    font-size: 70px;
+    font-size: 60px;
     font-weight: 700;
     margin-bottom: 14px;
-    color: #002d5b;
+    color: #e55153;
     line-height: 1.2;
     text-transform: capitalize;
     margin-bottom: 29px
 }
+.headpara{
+    text-align: justify;
+}
+
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .slider-area .hero__caption h1 {
@@ -2781,7 +2786,7 @@ hr {
 }
 
 .slider-area .hero__caption p {
-    color: #464d65;
+    color: #ffffff;
     margin-bottom: 42px
 }
 
@@ -2870,8 +2875,8 @@ hr {
 }
 
 .about-area .about-caption h3 {
-    font-size: 30px;
-    color: #000a2d;
+    font-size: 45px;
+    color: #e55153;
     font-weight: 700;
     margin-bottom: 35px;
     line-height: 1.5
@@ -3203,7 +3208,7 @@ hr {
 .contact-info-area .contact-caption h3 {
     font-size: 48px;
     display: block;
-    color: #000a2d;
+    color: #e55153;
     font-weight: 600;
     margin-bottom: 40px
 }
@@ -6520,3 +6525,58 @@ ul{
         padding-bottom: 5px;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    margin: 4px;
+    
+  }
+  
+  .active, .accordion:hover {
+    background-color: #ff848452;
+  }
+  
+  .accordion:after {
+    content: '\002B';
+    color: #e55153;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+    /* font-size: 30px; */
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+  
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
