@@ -165,6 +165,8 @@
   a:hover {
     color: #0056b3;
     text-decoration: underline;
+    transition: 200ms ease-in-out;
+    transform: scale(1.08);
   }
   a:not([href]):not([tabindex]) {
     color: inherit;
@@ -198,7 +200,7 @@
   img {
     vertical-align: middle;
     border-style: none;
-    
+    height: 60px;
   }
   svg {
     overflow: hidden;
@@ -618,6 +620,10 @@
     min-height: 1px;
     padding-right: 15px;
     padding-left: 15px;
+  }
+  .blog-wrapper:hover{
+    transition: 200ms ease-in-out;
+    transform: scale(1.08);
   }
   .col {
     -ms-flex-preferred-size: 0;
