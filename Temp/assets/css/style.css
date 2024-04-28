@@ -2787,7 +2787,8 @@ hr {
 
 .slider-area .hero__caption p {
     color: #ffffff;
-    margin-bottom: 42px
+    margin-bottom: 42px;
+    font-size: 18px;
 }
 
 .hero-overly {
