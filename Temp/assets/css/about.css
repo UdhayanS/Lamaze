@@ -1,0 +1,14 @@
+.appear_right_vision{
+    position:relative;
+    animation:animateright 1.7s}
+@keyframes animateright
+{from{right:-300px;opacity:0} to{right:0;opacity:3}}
+
+.appear_right_mission{
+    position:relative;
+    animation:animaterightm 2s}
+
+@keyframes animaterightm
+{from{right:-300px;opacity:0} to{right:0;opacity:3}}
+
+.animate-bottom{position:relative;animation:animatebottom 3s}@keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0;opacity:3}}
