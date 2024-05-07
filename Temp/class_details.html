@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function loadMessage() {
+            const message1 = localStorage.getItem("adminMessage1");
+            const message11 = localStorage.getItem("adminMessage11");
+
+            const message2 = localStorage.getItem("adminMessage2");
+            const message22 = localStorage.getItem("adminMessage22");
+
+            const message3 = localStorage.getItem("adminMessage3");
+            const message33 = localStorage.getItem("adminMessage33");
+
+            const message4 = localStorage.getItem("adminMessage4"); // Get the message from local storage
+            const message44 = localStorage.getItem("adminMessage44");
+
+            if (message1) {
+                document.getElementById("adminMessage1").textContent = message1; // Update the displayed message
+            } else {
+                document.getElementById("adminMessage1").textContent = "Date will be updated soon";
+            }
+
+
+            if (message11) {
+                document.getElementById("adminMessage11").textContent = message11; // Update the displayed message
+            } else {
+                document.getElementById("adminMessage11").textContent = "Time will be updated soon";
+            }
+
+
+            if (message2) {
+                document.getElementById("adminMessage2").textContent = message2; // Update the displayed message
+            } else {
+                document.getElementById("adminMessage2").textContent = "Date will be updated soon";
+            }
+            if (message22) {
+                document.getElementById("adminMessage22").textContent = message22; // Update the displayed message
+            } else {
+                document.getElementById("adminMessage22").textContent = "Time will be updated soon";
+            }
+
+
+            if (message3) {
+                document.getElementById("adminMessage3").textContent = message3; // Update the displayed message
+            } else {
+                document.getElementById("adminMessage3").textContent = "Date will be updated soon";
+            }
+            if (message33) {
+                document.getElementById("adminMessage33").textContent = message33; // Update the displayed message
+            } else {
+                document.getElementById("adminMessage33").textContent = "Time will be updated soon";
+            }
+
+
+            if (message4) {
+                document.getElementById("adminMessage4").textContent = message4; // Update the displayed message
+            } else {
+                document.getElementById("adminMessage4").textContent = "Date will be updated soon";
+            }
+            if (message44) {
+                document.getElementById("adminMessage44").textContent = message44; // Update the displayed message
+            } else {
+                document.getElementById("adminMessage44").textContent = "Time will be updated soon";
+            }
+
+        }
+
+        document.addEventListener("DOMContentLoaded", loadMessage); // Load message on page load
+    </script>
+</head>
+<body>
+    <h1>User Page</h1>
+    <h3>class 1:</h3>
+    <p id="adminMessage1">Date will be updated soon</p> <!-- Display the admin message here -->
+    <p id="adminMessage11">Time will be updated soon</p>
+
+    <h3>class 2:</h3>
+    <p id="adminMessage2">Date will be updated soon</p>
+    <p id="adminMessage22">Time will be updated soon</p>
+
+
+    <h3>class 3:</h3>
+    <p id="adminMessage3">Date will be updated soon.</p>
+    <p id="adminMessage33">Time will be updated soon</p>
+
+
+    <h3>class 4:</h3>
+    <p id="adminMessage4">Date will be updated soon</p>
+    <p id="adminMessage44">Time will be updated soon</p>
+
+</body>
+</html>

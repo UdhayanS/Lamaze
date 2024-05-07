@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function updateMessage1() {
+            const newMessage1 = document.getElementById("messageInput1").value;
+            localStorage.setItem("adminMessage1", newMessage1); // Update the message in local storage
+
+            const newMessage11 = document.getElementById("messageInput11").value;
+            localStorage.setItem("adminMessage11", newMessage11);
+            alert("Message updated!");
+        }
+
+
+        function updateMessage2() {
+            const newMessage2 = document.getElementById("messageInput2").value;
+            localStorage.setItem("adminMessage2", newMessage2); // Update the message in local storage
+
+            const newMessage22 = document.getElementById("messageInput22").value;
+            localStorage.setItem("adminMessage22", newMessage22);
+            alert("Message updated!");
+        }
+
+
+        function updateMessage3() {
+            const newMessage3 = document.getElementById("messageInput3").value;
+            localStorage.setItem("adminMessage3", newMessage3); // Update the message in local storage
+
+            const newMessage33 = document.getElementById("messageInput33").value;
+            localStorage.setItem("adminMessage33", newMessage33);
+            alert("Message updated!");
+        }
+
+        
+        function updateMessage4() {
+            const newMessage4 = document.getElementById("messageInput4").value;
+            localStorage.setItem("adminMessage4", newMessage4); // Update the message in local storage
+
+            const newMessage44 = document.getElementById("messageInput44").value;
+            localStorage.setItem("adminMessage44", newMessage44);
+            alert("Message updated!");
+        }
+    </script>
+</head>
+<body>
+    <h1>Admin Page</h1>
+    <label for="messageInput1">class 1:</label>
+    <input type="date" id="messageInput1">
+    <input type="time" id="messageInput11">
+    <button onclick="updateMessage1()">Update Message</button><br>
+
+    <label for="messageInpu2t">class 2:</label>
+    <input type="date" id="messageInput2">
+    <input type="time" id="messageInput22">
+    <button onclick="updateMessage2()">Update Message</button><br>
+
+    <label for="messageInput3">class 3:</label>
+    <input type="date" id="messageInput3">
+    <input type="time" id="messageInput33">
+    <button onclick="updateMessage3()">Update Message</button><br>
+
+    <label for="messageInput4">class 4:</label>
+    <input type="date" id="messageInput4">
+    <input type="time" id="messageInput44">
+    <button onclick="updateMessage4()">Update Message</button>
+</body>
+</html>
